@@ -1,5 +1,10 @@
 package com.matwer.objectmaster;
 
+/**
+ * @author Matthew Werner
+ *
+ */
+
 public class Human {
 	
 	public int strength, stealth, intelligence, health;
@@ -11,9 +16,9 @@ public class Human {
 		health = 100;
 	}
 	
-	public int attack(Human h) {
+	public void attack(Human h) {
 		h.health -= this.strength;
-		return h.health;
+		System.out.println("Human attacks - health is " + h.health);
 	}
 
 }

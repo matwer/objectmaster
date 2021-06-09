@@ -1,23 +1,50 @@
 package com.matwer.objectmaster;
 
+/**
+ * @author Matthew Werner
+ *
+ */
+
 public class HumanTest {
 
 	public static void main(String[] args) {
 		
 		// TODO Auto-generated method stub
-		Human shadrach = new Human();
-		Human meshach = new Human();
-		Human abednego = new Human();
+		Human derrek = new Human();
+		Human tomke = new Human();
+		Human guifford = new Human();
+		Wizard jairo = new Wizard();
+		Ninja hollis = new Ninja();
+		Samurai mol = new Samurai();
 		
-		System.out.println("shadrach attacks meshach - meshach's health is " + shadrach.attack(meshach));
-		System.out.println("meshach attacks abednego - abednego's health is " + meshach.attack(abednego));
-		System.out.println("abednego attacks shadrach - shadrach's health is " + abednego.attack(shadrach));
-		System.out.println("abednego attacks shadrach - shadrach's health is " + abednego.attack(shadrach));
-		System.out.println("abednego attacks shadrach - shadrach's health is " + abednego.attack(shadrach));
-		System.out.println("meshach attacks abednego - abednego's health is " + meshach.attack(abednego));
-		System.out.println("shadrach attacks meshach - meshach's health is " + shadrach.attack(meshach));
-		System.out.println("shadrach attacks meshach - meshach's health is " + shadrach.attack(meshach));
+		System.out.println("Derrak attacks Tomke...");
+		derrek.attack(tomke);
 		
+		System.out.println("Guifford attacks Tomke...");
+		guifford.attack(tomke);
+		
+		System.out.println("Tomke attacks Guifford...");
+		tomke.attack(guifford);
+		System.out.println("Tomke attacks Guifford...");
+		tomke.attack(guifford);
+		System.out.println("Tomke attacks Guifford...");
+		tomke.attack(guifford);
+		System.out.println("Tomke attacks Guifford...");
+		tomke.attack(guifford);
+		
+		System.out.println("Jairo heals Guifford...");
+		jairo.heal(guifford);
+		System.out.println("Jairo attacks Derrek...");
+		jairo.fireball(derrek);
+		
+		System.out.println("Hollis attacks Jairo...");
+		hollis.steal(jairo);
+		System.out.println("Hollis runs away...");
+		hollis.runAway();
+		
+		System.out.println("Mol attacks Hollis...");
+		mol.deathBlow(hollis);
+		System.out.println("Mol meditates...");
+		mol.meditate();
 	}
-
 }
